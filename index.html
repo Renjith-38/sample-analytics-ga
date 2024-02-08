@@ -1,18 +1,47 @@
-<HTML>
-<head>
-<title> Sample </title>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NC4W94TM5H"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config','G-NC4W94TM5H');
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>test</title>
+<meta property="og:title" content="url "/>
+<meta property="og:description" content="Expand reach using short URLs"/>
+<meta property="og:image" content="http://localhost:8080/Urls/static/appcode/images/logo-MetaData.png"/>
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="url "/>
+<meta name="twitter:image"  content="http://localhost:8080/Urls/static/appcode/images/logo-MetaData.png"/>
+<meta name="twitter:description" content="Expand reach using short URLs"/>
+<script>var el = document.createElement('script');
+el.setAttribute('src', 'https://www.googletagmanager.com/gtag/js?id=G-NC4W94TM5H');
+el.setAttribute('type', 'text/javascript');
+document.head.appendChild(el);
+window.dataLayer = window.dataLayer || [];
+function gtag() {
+dataLayer.push(arguments);
+}
+gtag('js', new Date());
+gtag('config', 'G-NC4W94TM5H');
+ga('set', 'dimension1', '25021');
+ga('set', 'dimension2', '311');
+ga('set', 'anonymizeIp', true);
 </script>
-</script>
-</head>
-
-<bddy>
-<h1> Test WEbsite </h1>
-</body>
-</html>
+</head><body><script>
+var url=window.location.href;
+var longUrl= 'https:\/\/symphony.tcsicc.com\/IndiaCloud\/Summit_WebLogin.aspx#!';
+url=url.split("?");
+longUrl=longUrl.split("?");
+var queryParams=url[1];
+var queryParamsLongURL=longUrl[1];
+var shortUrlqP= null;
+var longUrlqP= null;
+if(typeof queryParams !=='undefined')
+{
+   shortUrlqP=queryParams;
+}
+if(typeof queryParamsLongURL !=='undefined')
+{
+   longUrlqP=queryParamsLongURL;
+}
+var referer = document.referrer;
+var rU = 'https:\/\/symphony.tcsicc.com\/IndiaCloud\/Summit_WebLogin.aspx#!'+((shortUrlqP != null)? '?'+shortUrlqP:'');
+window.location = rU;</script></body></html>
