@@ -1,11 +1,46 @@
-<html>
-<head>
-<title>
-   trst
-</title>
-<meta name="referrer" content="no-referrer">
-</head>
-<body>
-<h1> <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS"> link </a>  </h1>
-</body>
-</html>
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>ZAQ</title>
+<meta property="og:title" content="ZAQ "/>
+<meta property="og:description" content="Expand reach using short URLs"/>
+<meta property="og:image" content="http://localhost:8080/Urls/static/appcode/images/logo-MetaData.png"/>
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="ZAQ "/>
+<meta name="twitter:image"  content="http://localhost:8080/Urls/static/appcode/images/logo-MetaData.png"/>
+<meta name="twitter:description" content="Expand reach using short URLs"/>
+<script>var el = document.createElement('script');
+el.setAttribute('src', 'https://www.googletagmanager.com/gtag/js?id=G-DE1CM65VW8');
+el.setAttribute('type', 'text/javascript');
+document.head.appendChild(el);
+window.dataLayer = window.dataLayer || [];
+function gtag() {
+dataLayer.push(arguments);
+}
+gtag('js', new Date());
+gtag('set', 'user_properties', {'url_id':'25093'});
+gtag('set', 'user_properties', {'CONSUMER_APP_ID':'311'});
+gtag('config', 'G-DE1CM65VW8');
+</script>
+</head><body><script>
+var url=window.location.href;
+var longUrl= 'https:\/\/medium.com\/@saygiligozde\/design-patterns-in-java-5251032ca244';
+url=url.split("?");
+longUrl=longUrl.split("?");
+var queryParams=url[1];
+var queryParamsLongURL=longUrl[1];
+var shortUrlqP= null;
+var longUrlqP= null;
+if(typeof queryParams !=='undefined')
+{
+   shortUrlqP=queryParams;
+}
+if(typeof queryParamsLongURL !=='undefined')
+{
+   longUrlqP=queryParamsLongURL;
+}
+var referer = document.referrer;
+var rU = 'https:\/\/medium.com\/@saygiligozde\/design-patterns-in-java-5251032ca244'+((shortUrlqP != null)? '?'+shortUrlqP:'');
+window.location = rU;</script></body></html>
